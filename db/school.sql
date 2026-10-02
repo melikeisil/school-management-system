@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS `advanced_programming`;
 CREATE TABLE IF NOT EXISTS `advanced_programming` (
-  `stu_id` int NOT NULL,
+  `stu_id` int NOT NULL AUTO_INCREMENT,
   `stu_name` varchar(255) DEFAULT NULL,
   `stu_surname` varchar(255) DEFAULT NULL,
   `stu_mid` int DEFAULT NULL,
@@ -80,7 +80,7 @@ INSERT INTO `advanced_programming_attendance` (`stu_id`, `week_no`) VALUES
 
 DROP TABLE IF EXISTS `machine_learning`;
 CREATE TABLE IF NOT EXISTS `machine_learning` (
-  `stu_id` int NOT NULL,
+  `stu_id` int NOT NULL AUTO_INCREMENT,
   `stu_name` varchar(255) DEFAULT NULL,
   `stu_surname` varchar(255) DEFAULT NULL,
   `stu_mid` int DEFAULT NULL,
@@ -132,7 +132,7 @@ INSERT INTO `machine_learning_attendance` (`stu_id`, `week_no`) VALUES
 
 DROP TABLE IF EXISTS `students`;
 CREATE TABLE IF NOT EXISTS `students` (
-  `stu_id` int NOT NULL,
+  `stu_id` int NOT NULL AUTO_INCREMENT,
   `stu_name` varchar(255) DEFAULT NULL,
   `stu_surname` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`stu_id`)
@@ -155,7 +155,7 @@ INSERT INTO `students` (`stu_id`, `stu_name`, `stu_surname`) VALUES
 
 DROP TABLE IF EXISTS `web_programming`;
 CREATE TABLE IF NOT EXISTS `web_programming` (
-  `stu_id` int NOT NULL,
+  `stu_id` int NOT NULL AUTO_INCREMENT,
   `stu_name` varchar(255) DEFAULT NULL,
   `stu_surname` varchar(255) DEFAULT NULL,
   `stu_mid` int DEFAULT NULL,
