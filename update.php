@@ -4,20 +4,6 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$servername = "schoolconnect.online";
-$username = "dbj94feydvxq";
-$password = "20122020!Ama";
-$dbname = "students";
-
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-
 $stu_id = $course = '';
 if (isset($_GET['id'])) {
     $stu_id = $_GET['id'];
@@ -78,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['stu_id']) && isset($_P
 
         $attendance_weeks = [];
         for ($i = 1; $i <= 15; $i++) {
-            if (isset($_POST['attendance' . $i])) {
+            if (isset($_POST['attendance_' . $i])) {
                 $attendance_weeks[] = $i;
             }
         }

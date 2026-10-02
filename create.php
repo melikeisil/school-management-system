@@ -1,10 +1,5 @@
 <?php
 
-$servername = "schoolconnect.online";
-$username = "dbj94feydvxq";
-$password = "20122020!Ama";
-$dbname = "students";
-
 $conn = mysqli_connect("localhost", "root", "", "school");
 
 if (!$conn) {

@@ -45,7 +45,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['confirm_delete'])) {
     $tables_to_delete_from = [
 
         "students",
-        "students_attendance",
         "web_programming",
         "web_programming_attendance",
         "machine_learning",
