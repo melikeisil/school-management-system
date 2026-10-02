@@ -84,6 +84,8 @@ http://localhost/SchoolManagement
 Use the login pages to test each user role.(from database students table that mentioned above as "student login")
 
 
+This is an early learning project and has known security issues (missing authorization checks, SQL injection and XSS). It requires MySQL 8. Do not deploy it to a public server as is.
+
 
 
 
